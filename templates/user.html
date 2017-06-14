@@ -1,0 +1,37 @@
+<ion-view>
+
+  <ion-nav-bar class="footerlogin">
+    <ion-nav-title>
+      <p style="color: white; text-align: center">ข้อมูลส่วนตัว</p>
+    </ion-nav-title>
+    <ion-nav-buttons side="left">
+      <button class="button w3-button w3-blue w3-round icon-left ion-ios-arrow-back" ng-click="btnBack()">Back</button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button w3-button w3-blue w3-round icon-left ion-edit" ng-click="btnEdit()">แก้ไข</button>
+    </ion-nav-buttons>
+
+  </ion-nav-bar>
+  <ion-content>
+    <div class="list card" ng-repeat="data in myData">
+      <ion-item class="profile-item">
+        <div class="profile-picture big-profile-picture">
+          <img src="https://goo.gl/xbUXMm">
+        </div>
+        <br>
+        <div class="profile-info">ชื่อผู้ใช้งาน : {{data.title}} {{data.names}} {{data.surname}}</div>
+        <div class="profile-info">รหัสเข้าสู่ระบบ : {{data.users_login}}</div>
+        <div class="profile-info">เพศ : {{data.sex}}</div>
+        <div class="profile-info">เบอร์ : {{data.phone_number}}</div>
+        <div class="profile-info">อีเมลล์ : {{data.email}}</div>
+        <div class="profile-info">ใช้งานครั้งล่าสุด : {{data.lastlogin_date}}</div>
+      </ion-item>
+      <ion-item class="profile-item">
+        <button class="button button-block button-positive" ng-click="btnPassword()">
+          เปลี่ยนรหัสผ่าน
+        </button>
+      </ion-item>
+    </div>
+  </ion-content>
+
+</ion-view>

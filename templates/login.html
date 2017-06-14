@@ -1,0 +1,40 @@
+<ion-view>
+
+  <ion-nav-bar class="footerlogin">
+    <ion-nav-title class="headertext">
+      <p style="color: white; text-align: center">ระบบจองเยี่ยมออนไลน์</p>
+    </ion-nav-title>
+
+  </ion-nav-bar>
+
+
+  <ion-content>
+    <form>
+      <div class="imgcontainer">
+        <img src="https://goo.gl/fgYlG3" alt="Avatar" class="imgCenter" style="width: 60%">
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="number" placeholder="รหัสประจำตัวประชาชน" name="uname" ng-model="form.txt_id" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="รหัสผ่านของคุณ" name="psw" ng-model="form.txt_pass" required>
+
+        <button type="submit" ng-click="btnLogin()">Login</button>
+        <input type="checkbox" checked="checked"> ล๊อกอินตลอดเวลา
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn" ng-click="btnForgot()">ลืมรหัสผ่าน</button>
+        <button type="submit" class="signupbtn" ng-click="btnActivate()">ยืนยันตัวตน</button>
+      </div>
+    </form>
+  </ion-content>
+
+  <ion-footer-bar class="footerlogin">
+
+    <p class="footertext">กรมราชทัณฑ์</p>
+
+  </ion-footer-bar>
+</ion-view>

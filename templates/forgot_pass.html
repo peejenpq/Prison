@@ -1,0 +1,54 @@
+<ion-view>
+
+  <ion-nav-bar class="footerlogin">
+    <ion-nav-title class="headertext">
+      <p style="color: white; text-align: center">Visit Reservation</p>
+    </ion-nav-title>
+
+  </ion-nav-bar>
+
+
+  <ion-content>
+    <!--<form>-->
+      <!--<div>-->
+        <!--<div class="col">-->
+          <!--<img src="https://goo.gl/fgYlG3" class="imgCenter" style="width:50%">-->
+
+          <!--<div class="item-input-inset">-->
+            <!--<p class="textId">ID</p>-->
+            <!--<label class="textbox"><input type="text" ng-model="form.txt_id" placeholder="รหัสประจำตัวประชาชน"-->
+                                          <!--style="width: 100%">-->
+            <!--</label>-->
+          <!--</div>-->
+
+          <!--<div class="item-input-inset">-->
+            <!--<p class="text1">Email</p>-->
+            <!--<label class="textbox"><input type="text" ng-model="form.txt_email" placeholder="อีเมลล์"> </label>-->
+          <!--</div>-->
+          <!--<br>-->
+          <!--<button class="button ion-unlocked btnBlack" ng-click="btnSubmit(data)" type="submit"> Send</button>-->
+          <!--<br>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</form>-->
+    <img src="https://goo.gl/fgYlG3" class="imgCenter" style="width:50%">
+    <form style="border:1px solid #ccc">
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="number" placeholder="รหัสประจำตัวประชาชน" name="uname" ng-model="form.txt_id" required>
+
+        <label><b>Email</b></label>
+        <input type="email" placeholder="ใส่อีเมลล์ของคุณ" name="email" ng-model="form.txt_email" required>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn" ng-click="btnCancel()">ยกเลิก</button>
+          <button type="submit" class="signupbtn" ng-click="btnSubmit()">ขอรหัสใหม่</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+
+  <ion-footer-bar class="hide-on-keyboard-open footerlogin" >
+    <p class="footertext">กรมราชทัณฑ์</p>
+  </ion-footer-bar>
+</ion-view>
