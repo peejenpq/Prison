@@ -14,7 +14,7 @@ angular.module('starter')
         $state.go('selectPlace');
       }
       $http({
-          url: 'http://27.131.160.116:8080/wsPrison/login.php',
+          url: 'http://.../login.php',
           method: 'POST',
           data: {
             'var_id': $scope.form.txt_id,
